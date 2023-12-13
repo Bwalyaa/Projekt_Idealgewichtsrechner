@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="idealgewichtsrechner">
-        <h2>idealgewichtsrechner</h2>
+    <form id="idealgewichtsform">
+        <label for="idealgewichtsform">Idealgewichtsrechner</label>
         <label for="height">Körpergröße</label>
-        <input type="text" id="inputHeight" style="width: 150px;">
+        <input type="number" id="inputHeight" required placeholder="Gib deine Größe in cm an!">
         <label for="age">Alter</label>
-        <input type="text" id="inputAge" style="width: 150px">
+        <input type="number" id="inputAge" required placeholder="Gib dein Alter an!">
+        <label for="bodyType">Körpertyp</label>
+        <div class="bodyTypeBox">
 
-        <p class="körperbau">Körperbau</p>
+            <label for="schmal">Schmal</label>
+            <input type="checkbox" id="schmal" value="schmal">
+            <label for="breit">Breit</label>
+            <input type="checkbox" id="breit" value="breit">
+            <button type="button" onclick="calcIdealWeight(); return false">Submit</button>
+        </div>
+    </form>
 
-    </div>
-    
+    <div id="result"></div>
+
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
