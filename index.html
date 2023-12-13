@@ -9,19 +9,18 @@
 </head>
 
 <body>
+    <h1>Idealgewichtsrechner</h1>
     <form id="idealgewichtsform">
-        <label for="idealgewichtsform">Idealgewichtsrechner</label>
-        <label for="height">Körpergröße</label>
-        <input type="number" id="inputHeight" required placeholder="Gib deine Größe in cm an!">
-        <label for="age">Alter</label>
+        <label for="inputHeight">Körpergröße</label>
+        <input type="number" id="inputHeight" required placeholder="Gib deine Größe(cm) an!">
+        <label for="inputAge">Alter</label>
         <input type="number" id="inputAge" required placeholder="Gib dein Alter an!">
         <label for="bodyType">Körpertyp</label>
         <div class="bodyTypeBox">
-
-            <label for="schmal">Schmal</label>
-            <input type="checkbox" id="schmal" value="schmal">
-            <label for="breit">Breit</label>
-            <input type="checkbox" id="breit" value="breit">
+            <select name="bodyType" id="bodyType">
+                <option value="breit">Breit</option>
+                <option value="schmal">Schmal</option>
+            </select>
             <button type="button" onclick="calcIdealWeight(); return false">Submit</button>
         </div>
     </form>
