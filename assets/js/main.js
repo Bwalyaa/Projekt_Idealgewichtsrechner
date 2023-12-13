@@ -12,6 +12,7 @@ function calcIdealWeight() {
     idealGewicht = (height - 100 + age / 10) * 0.9 * 1.1;
   }
 
+  idealGewicht = idealGewicht.toFixed(2); // Damit er nur zwei Nachkommastellen anzeigt
   const result = document.getElementById("result");
   result.innerHTML = `<p>Dein Idealgewicht ist: ${idealGewicht} KG</p>`;
 }

@@ -9,23 +9,25 @@
 </head>
 
 <body>
-    <h1>Idealgewichtsrechner</h1>
-    <form id="idealgewichtsform">
-        <label for="inputHeight">Körpergröße</label>
-        <input type="number" id="inputHeight" required placeholder="Gib deine Größe(cm) an!">
-        <label for="inputAge">Alter</label>
-        <input type="number" id="inputAge" required placeholder="Gib dein Alter an!">
-        <label for="bodyType">Körpertyp</label>
-        <div class="bodyTypeBox">
-            <select name="bodyType" id="bodyType">
-                <option value="breit">Breit</option>
-                <option value="schmal">Schmal</option>
-            </select>
-            <button type="button" onclick="calcIdealWeight(); return false">Submit</button>
-        </div>
-    </form>
+    <section class="calculator">
+        <h1>Idealgewichtsrechner</h1>
+        <form id="idealgewichtsform">
+            <label for="inputHeight">Körpergröße</label>
+            <input type="number" id="inputHeight" required placeholder="Gib deine Größe(cm) an!">
+            <label for="inputAge">Alter</label>
+            <input type="number" id="inputAge" required placeholder="Gib dein Alter an!">
+            <label for="bodyType">Körpertyp</label>
+            <div class="bodyTypeBox">
+                <select name="bodyType" id="bodyType">
+                    <option value="breit">Breit</option>
+                    <option value="schmal">Schmal</option>
+                </select>
+                <button type="button" onclick="calcIdealWeight(); return false">Submit</button>
+            </div>
+        </form>
 
-    <div id="result"></div>
+        <div id="result"></div>
+    </section>
 
     <script src="./assets/js/main.js"></script>
 </body>
