@@ -3,16 +3,17 @@ function calcIdealWeight() {
 
   const age = +document.getElementById("inputAge").value;
   const height = +document.getElementById("inputHeight").value;
-  const bodyType = document.getElementById("bodyType").value;
+  const schmal = document.getElementById("schmal").checked;
+  const breit = document.getElementById("breit").checked;
   let idealGewicht;
 
-  if (bodyType === "schmal") {
+  if (schmal) {
     idealGewicht = (height - 100 + age / 10) * 0.9 * 0.9;
-  } else if (bodyType === "breit") {
+  } else if (breit) {
     idealGewicht = (height - 100 + age / 10) * 0.9 * 1.1;
   }
 
-  idealGewicht = idealGewicht.toFixed(2); // Damit er nur zwei Nachkommastellen anzeigt
+  idealGewicht = idealGewicht.toFixed(2); // Damit er nur maximal zwei Nachkommastellen anzeigt
   const result = document.getElementById("result");
   result.innerHTML = `<p>Dein Idealgewicht ist: ${idealGewicht} KG</p>`;
 }

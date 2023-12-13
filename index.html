@@ -18,10 +18,10 @@
             <input type="number" id="inputAge" required placeholder="Gib dein Alter an!">
             <label for="bodyType">Körpertyp</label>
             <div class="bodyTypeBox">
-                <select name="bodyType" id="bodyType">
-                    <option value="breit">Breit</option>
-                    <option value="schmal">Schmal</option>
-                </select>
+                <input type="radio" name="radio" id="breit" value="breit">
+                <label for="breit">Breit</label>
+                <input type="radio" name="radio" id="schmal" value="schmal">
+                <label for="schmal">Schmal</label>
                 <button type="button" onclick="calcIdealWeight(); return false">Submit</button>
             </div>
         </form>
