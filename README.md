@@ -6,8 +6,8 @@ You can choose between two different body types - narrow and wide.
 Part of coding exercise for SuperCode Bootcamp.
 ## Authors
 
-- [@octokatherine](https://www.github.com/bwalyaa)
-- [@octokatherine](https://www.github.com/digitalflowerstudio)
+- [@bwalyaa](https://www.github.com/bwalyaa)
+- [@digitalflowerstudio](https://www.github.com/digitalflowerstudio)
 
 
 ## Demo
