@@ -18,12 +18,19 @@
         <label for="bodyType">Körpertyp</label>
         <div class="bodyTypeBox">
 
-            <label for="schmal">Schmal</label>
-            <input type="checkbox" id="schmal" value="schmal">
+            <!-- <label for="schmal">Schmal</label>
+            <input type="radio" id="schmal" value="schmal">
             <label for="breit">Breit</label>
-            <input type="checkbox" id="breit" value="breit">
+            <input type="checkbox" id="breit" value="breit"> -->
+            <input type="radio" id="breit" value="breit">
+            <label for="html">Breit</label>
+            <input type="radio" id="schmal" value="schmal">
+            <label for="css">Schmal</label>
+            
             <button type="button" onclick="calcIdealWeight(); return false">Submit</button>
         </div>
+
+    
     </form>
 
     <div id="result"></div>
